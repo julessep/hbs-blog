@@ -1,0 +1,18 @@
+{{> nav}}
+<main>
+	<div class="container">
+
+	<h1 class="left-align">Blog</h1>
+		<div id="eachPost">
+			{{#each entry}}
+			{{!-- the #each is a built in helper of handlebars --}}
+			<div id="entry">
+				<p>{{post}}</p>
+				<p>{{date}}</p>
+			</div>
+			{{/each}}
+		</div>
+
+	</div>
+</main>
+
