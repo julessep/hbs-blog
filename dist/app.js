@@ -6,14 +6,14 @@ let Handlebars = require('hbsfy/runtime');
 Handlebars.registerPartial("nav", require('../templates/partials/header.hbs'));
 // Handlebars.registerPartial("footer", require('../templates/partials/footer.hbs'));
 
-let testTemplate = require('../templates/test.hbs');
-$(".output").append(testTemplate());
+// let testTemplate = require('../templates/test.hbs');
+// $(".output").append(testTemplate());
 
-let homeTemplate = require('../templates/home.hbs');
-$(".output").append(homeTemplate());
+// let homeTemplate = require('../templates/home.hbs');
+// $(".output").append(homeTemplate());
 
-let aboutTemplate = require('../templates/about.hbs');
-$(".outputAbout").append(aboutTemplate());
+// let aboutTemplate = require('../templates/about.hbs');
+// $(".outputAbout").append(aboutTemplate());
 
 let blogPostTemplate = require('../templates/blog.hbs');
 $(document).ready( function(){
@@ -79,7 +79,7 @@ showAbout();
 
 
 
-},{"../templates/about.hbs":23,"../templates/blog.hbs":24,"../templates/home.hbs":25,"../templates/partials/header.hbs":26,"../templates/test.hbs":27,"hbsfy/runtime":21,"jquery":22}],2:[function(require,module,exports){
+},{"../templates/blog.hbs":23,"../templates/partials/header.hbs":24,"hbsfy/runtime":21,"jquery":22}],2:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -11469,16 +11469,6 @@ return jQuery;
 },{}],23:[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
-module.exports = HandlebarsCompiler.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return ((stack1 = container.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "<main>\n	<div class=\"container\">\n\n	<h1 class=\"left-align\">about page will go here</h1>\n		<div>\n		<p>Lorem ipsum dolor sit amet, id platonem voluptaria consectetuer mel, eu essent prompta consetetur pro. Quo ea deseruisse adversarium, ad per wisi labores, at eam delenit qualisque. Te prima invidunt sit, facete liberavisse at vis, est dico agam facilisi in. Ea malis oblique sadipscing est. Ei vis ipsum vivendum philosophia, primis virtute legendos ad vim. Te pro everti alienum invenire. Malis possit ex sed. Usu tantas aliquam dissentiunt te, mea ne verear numquam. Vis an minimum ponderum, tale noster deleniti ad sit.</p>\n		</div>\n\n	</div>\n</main>\n";
-},"usePartial":true,"useData":true});
-
-},{"hbsfy/runtime":21}],24:[function(require,module,exports){
-// hbsfy compiled Handlebars template
-var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
@@ -11496,28 +11486,11 @@ module.exports = HandlebarsCompiler.template({"1":function(container,depth0,help
     + "		</div>\n\n	</div>\n</main>\n\n";
 },"usePartial":true,"useData":true});
 
-},{"hbsfy/runtime":21}],25:[function(require,module,exports){
+},{"hbsfy/runtime":21}],24:[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return ((stack1 = container.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "<main>\n	<div class=\"container\">\n\n	<h1 class=\"left-align\">home page will go here</h1>\n		<div>\n		<p>Lorem ipsum dolor sit amet, id platonem voluptaria consectetuer mel, eu essent prompta consetetur pro. Quo ea deseruisse adversarium, ad per wisi labores, at eam delenit qualisque. Te prima invidunt sit, facete liberavisse at vis, est dico agam facilisi in. Ea malis oblique sadipscing est. Ei vis ipsum vivendum philosophia, primis virtute legendos ad vim. Te pro everti alienum invenire. Malis possit ex sed. Usu tantas aliquam dissentiunt te, mea ne verear numquam. Vis an minimum ponderum, tale noster deleniti ad sit.</p>\n		</div>\n\n	</div>\n</main>\n";
-},"usePartial":true,"useData":true});
-
-},{"hbsfy/runtime":21}],26:[function(require,module,exports){
-// hbsfy compiled Handlebars template
-var HandlebarsCompiler = require('hbsfy/runtime');
-module.exports = HandlebarsCompiler.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<header>\n	<nav>\n	<div class=\"nav-wrapper\">\n	  <a href=\"#\" class=\"brand-logo\">jules sepulveda</a>\n	  <ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">\n	    <li><a href=\"#\" id=\"link-home\">index</a></li>\n	    <li><a href=\"#\" id=\"link-blog\">blog</a></li>\n	    <li><a href=\"#\" id=\"link-about\">about</a></li>\n	  </ul>\n	</div>\n	</nav>\n</header>\n";
-},"useData":true});
-
-},{"hbsfy/runtime":21}],27:[function(require,module,exports){
-// hbsfy compiled Handlebars template
-var HandlebarsCompiler = require('hbsfy/runtime');
-module.exports = HandlebarsCompiler.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "";
+    return "<header>\n	<nav>\n	<div class=\"nav-wrapper\">\n	  <a href=\"#\" class=\"brand-logo\">jules sepulveda</a>\n	  <ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">\n	    <li><a href=\"#\" id=\"link-about\">about</a></li>\n	  </ul>\n	</div>\n	</nav>\n</header>\n";
 },"useData":true});
 
 },{"hbsfy/runtime":21}]},{},[1]);

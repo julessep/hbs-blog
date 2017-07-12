@@ -5,14 +5,14 @@ let Handlebars = require('hbsfy/runtime');
 Handlebars.registerPartial("nav", require('../templates/partials/header.hbs'));
 // Handlebars.registerPartial("footer", require('../templates/partials/footer.hbs'));
 
-let testTemplate = require('../templates/test.hbs');
-$(".output").append(testTemplate());
+// let testTemplate = require('../templates/test.hbs');
+// $(".output").append(testTemplate());
 
-let homeTemplate = require('../templates/home.hbs');
-$(".output").append(homeTemplate());
+// let homeTemplate = require('../templates/home.hbs');
+// $(".output").append(homeTemplate());
 
-let aboutTemplate = require('../templates/about.hbs');
-$(".outputAbout").append(aboutTemplate());
+// let aboutTemplate = require('../templates/about.hbs');
+// $(".outputAbout").append(aboutTemplate());
 
 let blogPostTemplate = require('../templates/blog.hbs');
 $(document).ready( function(){

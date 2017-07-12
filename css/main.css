@@ -13,14 +13,15 @@ main {
 a {
   color: white; }
 
-nav {
+div .nav-wrapper {
   background-color: #0A1612; }
 
 footer .page-footer {
   background-color: #0A1612; }
 
 nav .brand-logo {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin: 4px; }
 
 h1 {
   color: #F7CE3E; }
